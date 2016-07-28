@@ -19,7 +19,8 @@
     "deploy": "NODE_ENV=production `npm bin`/webpack -p",
     "start": "npm run dev",
     "clean": "rm -rf app/dist app/build",
-    "setup": "npm install"
+    "setup": "npm install",
+    "generate": "plop --plopfile internals/generators/index.js"
   },
   "repository": {
     "type": "git",
@@ -80,6 +81,7 @@
     "jsdom": "^7.2.0",
     "mocha": "^2.3.4",
     "npm-install-webpack-plugin": "^4.0.3",
+    "plop": "^1.5.0",
     "react-css-modules": "^3.7.6",
     "react-hot-loader": "^1.3.0",
     "redux-devtools": "^3.0.1",
