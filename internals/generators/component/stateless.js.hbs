@@ -4,26 +4,19 @@
 *
 */
 
-import React from 'react';
+import React, { PropTypes } from 'react'
 
-{{#if wantMessages}}
-import { FormattedMessage } from 'react-intl';
-import messages from './messages';
-{{/if}}
 
 {{#if wantCSS}}
 import styles from './styles.css';
 {{/if}}
 
-function {{ properCase name }}() {
+function {{ properCase name }}(props) {
   return (
     {{#if wantCSS}}
     <div className={{curly true}}styles.{{ camelCase name }}{{curly}}>
     {{else}}
     <div>
-    {{/if}}
-    {{#if wantMessages}}
-      <FormattedMessage {...messages.header} />
     {{/if}}
     </div>
   );
